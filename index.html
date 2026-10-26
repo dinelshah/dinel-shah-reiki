@@ -10,18 +10,19 @@
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Marcellus&family=Figtree:wght@400;500;600&family=DM+Mono:wght@400;500&display=swap">
 <style>
 /* Layout: one calm column with a radiating "hands-on" field in the hero; sections alternate between open ground and a soft tinted band. */
+/* Fall palette: harvest wheat ground, maple-leaf rust accent, deep walnut ink, golden-hour glow. */
 :root {
-  --bg: #f3f6f4;          /* morning mist, faint green */
-  --band: #e5ede8;        /* eucalyptus wash */
-  --surface: #fbfdfc;
-  --ink: #1d3a3a;         /* deep teal ink */
-  --muted: #557070;
-  --line: #c9d8d1;
-  --accent: #b86a12;      /* marigold, darkened for text contrast */
-  --accent-soft: #f2dcb6;
+  --bg: #f8f0e4;          /* harvest wheat */
+  --band: #f0e0c9;        /* dried-leaf amber wash */
+  --surface: #fffaf3;
+  --ink: #3b2418;         /* walnut */
+  --muted: #7a5a44;
+  --line: #e2cdb2;
+  --accent: #a8471a;      /* maple rust, dark enough for text */
+  --accent-soft: #f3d3a6; /* pale pumpkin */
   --on-accent: #ffffff;
-  --ring: 29, 90, 85;     /* rgb for canvas rings */
-  --glow: 214, 150, 52;
+  --ring: 120, 62, 30;    /* rgb for canvas rings */
+  --glow: 221, 140, 48;   /* golden hour */
 
   --display: "Marcellus", "Iowan Old Style", "Palatino Linotype", Georgia, serif;
   --body: "Figtree", "Segoe UI", system-ui, -apple-system, sans-serif;
@@ -29,15 +30,15 @@
 }
 @media (prefers-color-scheme: dark) {
   :root:not([data-theme="light"]) {
-    --bg: #0f1a1a; --band: #152424; --surface: #1a2c2c; --ink: #e3eeea; --muted: #9db6b0;
-    --line: #2c4442; --accent: #eaa94a; --accent-soft: #3a2c16; --on-accent: #1a1206;
-    --ring: 140, 200, 190; --glow: 234, 169, 74; color-scheme: dark;
+    --bg: #1c1410; --band: #251a14; --surface: #2d2019; --ink: #f3e6d6; --muted: #c4a68c;
+    --line: #4a3426; --accent: #e8873f; --accent-soft: #4a2c16; --on-accent: #1c1006;
+    --ring: 232, 160, 110; --glow: 232, 135, 63; color-scheme: dark;
   }
 }
 :root[data-theme="dark"] {
-  --bg: #0f1a1a; --band: #152424; --surface: #1a2c2c; --ink: #e3eeea; --muted: #9db6b0;
-  --line: #2c4442; --accent: #eaa94a; --accent-soft: #3a2c16; --on-accent: #1a1206;
-  --ring: 140, 200, 190; --glow: 234, 169, 74; color-scheme: dark;
+  --bg: #1c1410; --band: #251a14; --surface: #2d2019; --ink: #f3e6d6; --muted: #c4a68c;
+  --line: #4a3426; --accent: #e8873f; --accent-soft: #4a2c16; --on-accent: #1c1006;
+  --ring: 232, 160, 110; --glow: 232, 135, 63; color-scheme: dark;
 }
 
 * { box-sizing: border-box; }
